@@ -1,0 +1,446 @@
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for making website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+
+    
+ </head>
+ <body class="bbody">
+
+<!-- Banner Section -->
+<div class="banner">
+    <h1> Cart List</h1>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Cart List</span>
+    </div>
+</div>
+
+
+
+
+  <div class="ccontainer table-wrapper">
+   <table>
+    <thead>
+     <tr>
+      <th>
+       Menu Image
+      </th>
+      <th>
+       Menu Name
+      </th>
+      <th>
+       Price
+      </th>
+      <th>
+       Quantity
+      </th>
+      <th>
+       Total
+      </th>
+      <th>
+       Remove
+      </th>
+     </tr>
+    </thead>
+    <tbody id="cart-items " class=" table-wrapper">
+     <tr>
+      <td class="menu-image">
+       <img alt="chiness pasta" height="50" src="images/chiness-pasta.jpeg" width="50"/>
+      </td>
+      <td>
+       Chinese Pasta
+      </td>
+      <td class="price" data-price="15.99">
+       $15.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $15.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Salad" height="50" src="images/salad.jpeg" width="50"/>
+      </td>
+      <td>
+     Salad
+      </td>
+      <td class="price" data-price="10.99">
+       $10.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $10.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Chicken white rice" src="images/chicken-rice.jpeg">
+      </td>
+      <td>
+       Chicken White Rice
+      </td>
+      <td class="price" data-price="70.99">
+       $70.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $70.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Fries" height="50" src="images/fries.jpeg" width="50"/>
+      </td>
+      <td>
+      Fries
+      </td>
+      <td class="price" data-price="10.99">
+       $10.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $10.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Chicken fried rice" height="50" src="images/fried-rice.png" width="50"/>
+      </td>
+      <td>
+      Chicken Fried Rice
+      </td>
+      <td class="price" data-price="25.99">
+       $25.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $25.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Grilled Chicken" height="50" src="images/grilled-chicken.jpeg" width="50"/>
+      </td>
+      <td>
+   Grilled Chicken
+      </td>
+      <td class="price" data-price="200.99">
+       $200.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $200.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Chese pasta" height="50" src="images/cheese-pasta.jpg" width="50"/>
+      </td>
+      <td>
+     Cheese Pasta
+      </td>
+      <td class="price" data-price="200.99">
+       $200.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $200.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Cofee" height="50" src="images/cofee.jpeg" width="50"/>
+      </td>
+      <td>
+        Cappuccino Coffee
+      </td>
+      <td class="price" data-price="25.99">
+       $25.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $25.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Tea" height="50" src="images/tea.jpeg" width="50"/>
+      </td>
+      <td>
+     Milk Tea
+      </td>
+      <td class="price" data-price="5.99">
+       $5.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $5.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+     <tr>
+      <td class="menu-image">
+       <img alt="Pizza" height="50" src="images/pizza.jpg" width="50"/>
+      </td>
+      <td>Chicken Pizza
+      </td>
+      <td class="price" data-price="30.99">
+       $30.99
+      </td>
+      <td>
+       <div class="quantity-control">
+        <button class="decrease-quantity">
+         -
+        </button>
+        <input type="text" value="1" min="1" max="32767" onkeydown="return false"/>
+        <button class="increase-quantity">
+         +
+        </button>
+       </div>
+      </td>
+      <td class="total">
+       $30.99
+      </td>
+      <td>
+       <i class="fas fa-trash remove-icon">
+       </i>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+<!-- cart total itmes -->
+
+<div class="cart-totals-container ">
+    <div class="cart-totals">
+        <h2>Cart Totals</h2>
+        <div class="row">
+            <label>Cart Subtotal</label>
+            <div class="value">$0</div>
+        </div>
+        <div class="row">
+            <label>Shipping and Handling</label>
+        </div>
+        <div class="shipping-options">
+            <label>
+                <input type="radio" name="shipping" checked>
+                <span>Free shipping</span>
+            </label>
+            <label>
+                <input type="radio" name="shipping">
+                <span>Flat rate</span>
+            </label>
+            <div class="description">Shipping options will be updated during checkout.</div>
+        </div>
+        <div class="change-address">Change address</div>
+        <div class="row">
+            <label>Order Total</label>
+            <div class="value total">$0</div>
+        </div>
+    </div>
+    <a href="checkout.html"> <button class="checkout-btn cta-btn">Proceed to checkout</button></a>
+</div>
+<br/>
+<br/>
+<br/>
+
+<footer style="background-color: #000;">
+    <div class="footer-container">
+        <!-- Company info -->
+        <div class="footer-section">
+            <h3 style="color: white;">Fresheat Respondent</h3>
+            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies aliquam feugiat.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Gallery</a></li>
+                <li><a href="#">Our Blogs</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+  
+        <!-- Our Menu -->
+        <div class="footer-section">
+            <h3>Our Menu</h3>
+            <ul>
+                <li><a href="#">Burger King</a></li>
+                <li><a href="#">Pizza King</a></li>
+                <li><a href="#">Fresh Food</a></li>
+                <li><a href="#">Vegetable</a></li>
+                <li><a href="#">Desserts</a></li>
+            </ul>
+        </div>
+  
+        <!-- Contact Us with Email Input -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <input type="email" placeholder="Your email address">
+            <input type="submit" value="Subscribe">
+            <div class="privacy-policy">
+                <input type="checkbox" required>
+                <label style="color: white;">I agree to the <a href="#">Privacy Policy</a></label>
+            </div>
+        </div>
+    </div>
+  
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fresheat. All Rights Reserved | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+  <TableLayout
+  android:id="@+id/my_table_layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:stretchColumns="1"
+  android:shrinkColumns="0" >
+</TableLayout>
+
+
+ </body>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js">
+    
+</script>
+</html>
